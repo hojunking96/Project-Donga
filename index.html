@@ -3,30 +3,32 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <title>로또베이베</title>
     <style>
-        img {
-            max-width: 100%;
-            max-height: 100%;
-        }
-
         html,
         body {
-            text-align:center;
-            margin-top: 10px;
+            text-align: center;
             width: 100%;
             height: 100%;
+            margin:0;
         }
-
-        .header1 {
-            width: 100%;
-            text-align: center;
+        #blank1{
+            width:100%;
+            height: 10%;
         }
-
-        .header2 {
+        #mainLoggo{
+            height:30%;
+            width:100%;
+        }
+        #loggo{
+            max-width:100%;
+            max-height:100%;
+        }
+        #mainTitle {
             height: 20%;
-            width: 100%;
-            text-align: center;
+            width: 100%;    
         }
 
         h1 {
@@ -34,13 +36,13 @@
             font-size: 300%;
         }
 
-        .login {
+        #div3 {
             height: 10%;
             width: 100%;
             text-align: center;
         }
 
-        .signin {
+        #div4 {
             height: 10%;
             width: 100%;
             text-align: center;
@@ -51,6 +53,7 @@
             color: white;
             border: none;
             text-align: center;
+            max-width:20%;
             width: 20%;
             height: 70%;
             font-size: 100%;
@@ -60,17 +63,17 @@
 </head>
 
 <body>
-    <div class="header1">
-        <img src="loggo3.png" alt="loggo" id="loggo">
+    <div id="blank1"></div>
+    <div id="mainLoggo">
+        <img src="loggo3.png" alt="메인 로고" id="loggo">
     </div>
-    <div class="header2">
+    <div id="mainTitle">
         <h1>로또 베이베</h1>
-        <!--누르면 새로고침되는것처럼 링크-->
     </div>
-    <div class="login">
+    <div id="div3">
         <input type="button" class="button" value="로그인" onclick="location.href='login.html'">
     </div>
-    <div class="signin">
+    <div id="div4">
         <input type="button" class="button" value="회원가입" onclick="location.href='회원가입.html'">
     </div>
 

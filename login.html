@@ -1,72 +1,152 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>로또베이베</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>로또베이베</title>
+    <script language="javascript">
+        function showPopup() { window.open("login_findID.html", "아이디/비밀번호 찾기", "width=600, height=600, left=400, top=400"); }
+        </script>
     <style>
-       img {
-            max-height: 100%;
-        }
-        html, body {
-            margin-top:10px;
+        html,
+        body {
             width: 100%;
             height: 100%;
+            margin: 0;
         }
-       
-        .header1{
-            width:10%;
-            height:100px;
+
+        #loggo {
+            max-width: 100%;
+            max-height: 100%;
+            float: left;
+        }
+
+        #header1 {
+            height: 100px;
+        }
+
+        #Title {
+            max-width: 100%;
             text-align: center;
         }
-        .header2{
-            height:10px;
-            width:100%;
-            background-color: rgb(0,112,82);
-        } 
-        h1{
-            color:rgb(0,112,82);
-            font-size:300%;
+
+        #titleBorder {
+            height: 10px;
+            width: 100%;
+            background-color: rgb(0, 112, 82);
         }
-        .login{
-            margin:5% 0 5% 0;
-            height:10%;
-            width:100%;
+
+        h1 {
+            color: rgb(0, 112, 82);
+            font-size: 70px;
+        }
+        #mainDIV {
+            width: 300px;
+            height: 600px;
             text-align: center;
+        }
+
+        #alltable {
+            margin: auto;
+            height: 200px;
+            width: 70px;
+        }
+
+        #loginBTN {
+            height: 100%;
+        }
+
+        .BTN {
+            background-color: rgb(0, 112, 82);
+            color: white;
+            border: none;
+        }
+
+        #loginBTN {
+            height: 100%;
+            width: 100%;
+            font-size: 300%;
+        }
+
+       thead {
+        font-size:50px;
+        }
+        tr,td{
+            padding:30px;
+        }
+        #gobackBTN,
+        #findBTN{
+            height:50px;
+            width:300px;
+            font-size:large;
+            background-color:#81c147;
+            color:white;
+        }
+        .inputblank{
+            height:30px;
+            width:200px;
+            font-size:large;
+        }
+        thead{
+            height:150px;
+        }
+        #tableTitle{
             font-size:100%;
         }
-        .signin{
-            height:10%;
-            width:100%;
-            text-align: center;
-        }
-        .button{background-color: rgb(0,112,82);
-            color:white;
-            border:none;
-            text-align:center;
-            width:20%;  
-            height:70%;
-            font-size: 100%;
-            
+        #tr2{
+            height:50px;
         }
     </style>
 </head>
 
 <body>
-    <div class="header1">
-        <img src="loggo.jpg" alt="loggo" id="loggo">  <!--링크 연결 index로-->
+    <div id="header1">
+        <img src="loggo3.png" alt="메인 로고" id="loggo" onclick="location.href='index.html'">
+        <h1 id="Title">로그인</h1>
     </div>
-    <div class="header2">
+    <div id="titleBorder">
     </div>
-    <div class="login">
-        <p>아이디 : <input type="text" name="id"> </p>
-        <p>비밀번호 : <input type="password" name="pwd"> </p>       
-    </div>
-    <div class="signin">
-        <input type="submit" value="로그인" onclick="location.href='main.html'">
-        <input type="submit" value="돌아가기" onClick="history.back();">
+    <div id="mainDIV">
+        <table id="alltable">
+            <thead>
+                <tr>
+                    <th colspan="2" id="tableTitle">LOGIN</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="tr2">
+                    <td>
+                        <input type="text" class="inputblank" name="id" 
+                        placeholder="아이디" onfocus="this.placeholder=''" 
+                        onblur="this.placeholder='아이디'" >
+                    </td>
+                    <td rowspan="2">
+                        <input type="button" class="BTN" id="loginBTN" value="로그인" onclick="location.href='main.html'">
+
+                    </td>
+                </tr>
+                <tr id="tr3">
+
+                    <td>
+                        <input type="password" class="inputblank" name="pwd"
+                        placeholder="비밀번호" onfocus="this.placeholder=''" 
+                        onblur="this.placeholder='비밀번호'" >
+                    </td>
+                </tr>
+                <tr id="tr4">
+                    <td>
+                        <input type="button" id="findBTN" class="BTN" value="아이디/비밀번호 찾기" onclick="showPopup();">
+                    </td>
+                    <td>
+                        <input type="submit" id="gobackBTN" class="BTN" value="돌아가기" onClick="history.back();">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
 </body>
-</html>
 
-<!-- https://www.dhlottery.co.kr/user.do?method=login&returnUrl=/gameInfo.do?method=buyLotto 형식 유희열 -->
+</html>
