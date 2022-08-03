@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>로또시뮬레이터</title>
+
+    <style>
+        td {
+            border-bottom: 1px solid rgb(170, 170, 170);
+            padding: 10px;
+        }
+
+        table {
+            width: 400px;
+            border-top: 2px solid rgb(0, 112, 82);
+            border-collapse: collapse;
+        }
+        #info{
+            margin:20px;
+            width:400px;
+            height:300px;
+            border:1px solid rgb(170, 170, 170);
+        }
+        #moneydiv{
+            margin:20px;
+            width:400px;
+            height:300px;
+            border:1px solid rgb(170, 170, 170);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        배너&메뉴바
+    </div>
+    <div>
+        왼쪽 메뉴 바
+    </div>
+    <div id="main">
+        <div id="info">
+            <h1>개인 정보</h1>
+            <div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>아이디 :</td>
+                            <td colspan="2">abc123</td>
+                        </tr>
+                        <tr>
+                            <td>닉네임 :</td>
+                            <td>abc만세</td>
+
+                        </tr>
+                        <tr>
+                            <td>이메일 :</td>
+                            <td>abc123@abc.123</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+            <br>
+            <input type="button" value="고객센터">
+            <input type="button" value="자주묻는질문">
+            <input type="button" value="1:1상담">
+            <input type="button" value="이용가이드">
+        </div>
+        <div id="moneydiv">
+            <h1>보유 금액</h1>
+            <p>
+                3,000원 <br>
+                <input type="button" value="주급 받기"> <br>
+                <span>*1주일에 1회 금액 충전 가능</span>
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
