@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>누적순위</title>
+    <style>
+        .leftNav {
+            width: 300px;
+            float: left;
+            z-index: 1;
+        }
+        .leftNav > div{
+            height: 500px;
+        }
+        .leftNav > div > h2{
+            width: 200px;
+            text-align: center;
+        }
+        .leftNav > div > ul #ranks{
+            background-color: rgb(0, 112, 82);
+        }
+        .leftNav > div > ul > li:hover{
+            background-color: rgb(0, 112, 82);
+        }
+        .leftNav li > a {
+            display: block;
+            width: 200px;
+            height: 30px;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            line-height: 25px;
+            border: 1px solid rgb(0, 112, 82);
+        }
+        ul {
+            list-style: none;
+        }
+        li {
+            display: inline-block;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        p {
+            display: inline-block;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            padding: 0;
+            margin: 0;
+        }
+        th {
+            font-size: large;
+            border: 1px solid rgb(0, 112, 82);
+            height: 50px;
+            background-color: rgb(240, 240, 240);
+        }
+        td {
+            height: 300px;
+            border: 1px solid rgb(0, 112, 82);
+            text-align: center;
+        }
+        .tb1 {
+            border: 1px solid rgb(0, 112, 82);
+            table-layout: fixed;
+        }
+        .rank > div{
+            width: 1500px;
+        }
+        .rank div div{
+            float: left;
+            width: 1000px;
+        }
+        .register > div > a {
+            color: white;
+            margin-top: 10px;
+            width: 150px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background-color: rgb(0, 112, 82);
+            font-size: x-large;
+            float: right;
+        }
+
+        .result > .head {
+            text-align: center;
+        }
+
+        .nums {
+            height: 150px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        .numWin { 
+            flex-basis: 650px;
+            text-align: right;
+        }
+        .numBonus{
+            flex-basis: 150px;
+            text-align: left;
+        }
+        .numWin strong {
+            display: block;
+            text-align: right;
+            margin-right: 180px;
+        }
+        .numBonus strong{
+            display: block;
+            text-align: center;
+        }
+
+        .ball {
+            display: inline-block;
+            border-radius: 100%;
+            text-align: center;
+            vertical-align: middle;
+            background-color: rgb(0, 112, 82);
+            font-weight: 500;
+            width: 60px;
+            height: 60px;
+            line-height: 56px;
+            font-size: 30px;
+            color: white;
+            margin: 0 3px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <section>
+            <nav class="leftNav">
+                <div>
+                    <h2>순위</h2>
+                    <ul>
+                        <li id="ranks"><a href=""><span>누적순위</span></a></li>
+                        <li id="rank"><a href=""><span>최근회차 순위</span></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="rank">
+                <div>
+                    <h3>누적순위</h3>
+                    <div class="result">
+                        <div class="head">
+                            <h4>
+                                <strong>1026회</strong>
+                                당첨결과
+                            </h4>
+                            <p>(2022년 07월 30일 추첨)</p>
+                        </div>
+                        <div class="nums">
+                            <div class="numWin">
+                                <p>
+                                    <span class="ball">5</span>
+                                    <span class="ball">12</span>
+                                    <span class="ball">13</span>
+                                    <span class="ball">31</span>
+                                    <span class="ball">32</span>
+                                    <span class="ball">41</span>
+                                </p>
+                                <strong>당첨번호</strong>
+                            </div>
+                            <div class="numBonus">
+                                <p>&nbsp;&nbsp;
+                                    +&nbsp;
+                                    <span class="ball">5</span>
+                                </p>
+                                <strong>보너스</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <form action="">
+                            <table class="tb1">
+                                <thead>
+                                    <th>순위</th>
+                                    <th>닉네임</th>
+                                    <th>자산</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>안녕</td>
+                                        <td>안녕</td>
+                                        <td>안녕</td>
+                                    </tr>
+                                    <tr>
+                                        <td>안녕</td>
+                                        <td>안녕</td>
+                                        <td>안녕</td>
+                                    </tr>
+                                    <tr>
+                                        <td>안녕</td>
+                                        <td>안녕</td>
+                                        <td>안녕</td>
+                                    </tr>
+                                    <tr>
+                                        <td>안녕</td>
+                                        <td>안녕</td>
+                                        <td>안녕</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
