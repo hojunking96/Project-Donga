@@ -9,11 +9,6 @@
     margin: 0;
 }
 
-.leftNav>div>ul>li:hover {
-    background-color: rgb(0, 112, 82);
-    color: white;
-}
-
 .leftNav li>a {
     display: block;
     width: 200px;
@@ -27,5 +22,6 @@
 }
 
 .leftNav>div>ul>li a:hover {
+    background-color: rgb(0, 112, 82);
     color:white;
 }
